@@ -1,8 +1,72 @@
 prof douglas densmore
 
+remember: email prof about the midterm and final exam - how theyre being held and extra time etc
+ - he will let me know regarding midterm n final exam when he finds out himself
+ - have let him know about the name thing
+
+ BEFORE NEXT WEEK:
+ print out and sign syllabus consent document
+ download/complete combinational logic and sequential logic quizzes
+ overview of combinational logic in one lectureread chapter 1
+ read chapter 2
+
 quizzes on combinational logic and sequential logic - do these before next week to know if i should drop the class
 "everyone will get an a, a-, b unless you really screw around"
 
 densmore thesis on formal verification
 
-office in cilc building to go see arcade game
+office in cilse building (biology building) to go see arcade game
+
+dougd@bu.edu
+617-358-6238
+thursdays 10/11AM in office 403 in cilse building
+
+david r smith, paul franzon
+verilog styles for synthesis of digital systems
+
+midterm 10% - long, written, hard and u wont finish it
+3 programs, 30% (10, 10, 10)
+5 homework assignments 2% each
+final project 40%
+final exam 10%
+
+3 programs:
+ - logic synthesis
+ - FPGA designer
+ - physical design
+
+ EDA electronic design automation
+
+ HDL hardware description language (ie verilog etc)
+
+ RTL register transfer-level (design)
+
+combinatorial: output is result on function on inputs only.
+sequential: with latches in order. function of inputs and history of inputs
+
+have to recognise which parts are sequential and combinational
+
+specification --(verilog or vhdl description)-> code --(simulation)-> functional simulation
+code --(synthesis)->netlist--(simulate)->post synthesis simulation
+
+netlist is actual maps of gates and wires etc
+post synthesis simulation should be same as functional simulation. v important
+
+
+design flow overview - look up starter info on lecture 1 pdf notes
+ - design specification: describe what you want, performance reqs, time reqs, etc
+ - design partition: decide what is hardware and what is software. currently pretty automated
+ - design entry: start designing it
+ - simulation and functional verification
+ - design integration and verification
+ - pre synthesis sign off
+ - synthesize and map the gate-level netlist
+ - post synthesis validation (check the timing! critical paths!)
+ - post synthesis verification
+ - test generation and fault simulation
+ - NOT COVERED: cell placement, scan chain, clock tree insertion, cell routing
+ - NOT COVERED: DRC
+ - NOT COVERED: extract parasitics
+ - design sign-off
+
+
