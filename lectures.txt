@@ -42,7 +42,7 @@ final exam 10%
 
  RTL register transfer-level (design)
 
-combinatorial: output is result on function on inputs only.
+combinationial: output is result on function on inputs only.
 sequential: with latches in order. function of inputs and history of inputs
 
 have to recognise which parts are sequential and combinational
@@ -78,8 +78,131 @@ accidentally missed.
 combinational logic
 notes here
 
+binary numbers
+binary arithmetic
+gates/cmos layout
+two level logic
+sum of products (SOP) and product of sums (POS)
+K-maps (karnaugh maps)
+Q-macluskie, AKA tabular method
+Cube/mintern/prime implicant/implicant/essential prime implicant.
+do NOT say that combinational circuit is one that doesnt have cycles - can have cycles!
+only when the output is dependent on only the inputs is it combinational logic.
 
 =======================================================================================
 lecture 3 2026-09-10
 sequential logic
+next week fpga tutorial
 
+1nanosecond ns = 1gigahertz GHz
+
+timing diagrams/waveforms
+
+
+SR latches, D latches, D flipflop
+- SR latches
+s= set, r=reset.
+cross coupled NOR gates. pic in slides.
+can't trigger set and reset at the same time.
+storing 1 bit. press call button, light stays on; press again, light turns off.
+therefore must take into account both input and current state - needs memory!
+XOR(ButtonPressed?, Current state)
+bit storage using an SR latch. 
+remember that in practice that delays exist when values are getting updated! worry of oscillation - causing a glitch.
+designer might try to avoid issue using external circuit.
+
+ - level-sensitive SR latch
+SR latch but with a clock added. only allows data to update when the clock is high.
+
+ - D latches
+level sensitive D latch - inserted inverter ensures R always opposite of S (reset automatically when 'set' is off)
+stays value of D input until clock updates, then checks if new D value.
+transparency - accepting changes to D for entire length of clock high. if too long a clock, d latch may erroneously update
+
+ - D flipflop
+d flipflop is similar to D latch except it updates on the clock edge not the clock signal
+(posedge/negedge)
+made of two D latches, linked up. diagram on slides.
+solves issue for not knowing how many latches a signal travels through when clock=1
+
+scan chain - chain of flipflops
+also used in shifters (shifting binary left/right)
+
+setup time - time needed to change input value
+hold time - time taken til clock
+clock-to-Q - how long til output is updated
+
+if period is 20ns, frequency = 1/20 nanoseconds = 50 megahertz megahertz
+
+register is a collection of flipflops in order.
+
+
+
+
+FSM creation
+finite state machine - a machine that has a finite number of states.
+contains a register that stores the (value of) the current state.
+contains combinational logic that is used to determine the next state.
+the current state is what is coming out of the register.
+state gets updated at clock edge.
+
+
+ - Mealy machines
+ output is function of the current state combined with the input.
+ can have asynchronous outputs depending on input changes.
+ output on edge from state to state: mealy machine
+
+ - Moore machines - "Moore is Less/Less is Moore"
+ output is function of the current state
+ only clock-synchronous outputs.
+ outputs only associated with states then moore machine.
+
+State Transition Diagram (STD)
+initial state: arrow going in from outside diagram.
+edges: arrows pointing from state to state.
+edges (arrows) labelled with the inputs required.
+
+to make FSM truth table:
+Input 1| Input 2| [...] | Current state|-->| Output 1 (of current state) | [ ... ] | Next state 
+^all these values are in binary! rows can be concatenated into one big binary number technically
+
+One Hot: 100 states - 100 state lines in table.
+all states 'added together' or probability value. should equal 1.
+OR them all together, using binary arithmetic techniques
+A + ~AB + ~A~B = 1
+
+
+Minimum bit encoding: minimum bits needed to represent each state.
+
+FSM State transition verification
+- exhaustive and complete transitions
+
+FSM state encoding
+
+
+
+implication chart
+can't be told apart by outputs?
+then, can't be told apart by inputs?
+save states.
+IMG IN PHONE
+
+equivalent if no matter what state currently in, can't tell difference by output.
+
+state reduction/State minimization:
+reduce number of states without changing behaviour
+partitioning method
+1. partition/group states by their outputs.
+2. if FOR EACH STATE input is same and goes to same group, then good! otherwise, if next state is in different group, not same.
+3. break up not same states in same group - retry. note that if one state in group only, then can't be broken down further.
+
+partitioning for large FSM too complex for humans - now heuristics for it to be done automatically
+
+one hot encoding: [???]
+
+output encoding: encoding method where output is same as state.
+
+REMEMBER TO UPDATE SLIDES IN REPO - SLIDES EXPANDED.
+PRINT OUT N DO THE QUIZZES ANALOGUE STYLE NOT JUST DIGITAL STYLE (EVEN THOUGH DONE DIGITAL STYLE)
+next: quiz review, combinational and sequential logic wrap up.
+next lecture: verilog start
