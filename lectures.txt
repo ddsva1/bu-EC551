@@ -1,3 +1,4 @@
+lecture 1 2026-09-02
 prof douglas densmore
 
 remember: email prof about the midterm and final exam - how theyre being held and extra time etc
@@ -69,4 +70,16 @@ design flow overview - look up starter info on lecture 1 pdf notes
  - NOT COVERED: extract parasitics
  - design sign-off
 
+
+=======================================================================================
+lecture 2 2026-09-08
+accidentally missed.
+
+combinational logic
+notes here
+
+
+=======================================================================================
+lecture 3 2026-09-10
+sequential logic
 
