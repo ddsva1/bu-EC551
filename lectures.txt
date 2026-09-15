@@ -209,3 +209,24 @@ sept 17: verilog start
 
 =======================================================================================
 lecture 4 2026-09-15
+last day of review
+
+quick check for 2s complement binary -
+add to positive number (ie -745 +745 and should carry to 0)
+
+2s complement unique respresentation of 0 unlike 1 complement binary form
+
+variables
+literals
+conjunction of literals = Cube
+all represented: minterms
+implicants
+prime implicants
+essential prime implicants
+Max terms (0s)
+ - an implicate
+
+ boolean algebraic postulates
+
+ 
+
