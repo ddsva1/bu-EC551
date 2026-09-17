@@ -225,11 +225,12 @@ prime implicants
 essential prime implicants
 Max terms (0s)
  - an implicate
+boolean algebraic postulates
 
- boolean algebraic postulates
 
 =======================================================================================
 lecture 5 2026-09-17
 
- 
+may not be possible to convert mealy to moore and back.
+possible but an odd question to be asked/ 
 
