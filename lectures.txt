@@ -230,7 +230,49 @@ boolean algebraic postulates
 
 =======================================================================================
 lecture 5 2026-09-17
+(lecture 4 slides)
 
 may not be possible to convert mealy to moore and back.
 possible but an odd question to be asked/ 
+
+WARNING:
+most programming languages describe what you want to happen.
+verilog describes what the chip is and must be.
+don't write the code from top to bottom - think about the code happening all at once in a block.
+
+structural description: describing connections of components.
+write so that the synthesiser has no choice but to make it the way you want
+
+functional description: describing what the code does.
+written so the code gets the same answer as what you wanted but not necessarily how you expected.
+
+simulation description: doesn't always synthesise. system verilog.
+
+'module' describes component in a circuit. notes on slides.
+
+"accidental synthesis of a latch from an unspecified condition" <BAD
+
+INPUTS ARE MONITORED. UPON CHANGE, OUTPUT IS CHANGED.
+can be done continuously or over [...]
+
+module name_of_module (port list 1, port list 2)
+    input  in1 in2;
+    [SEE SLIDE AND ONLINE WRITING GUIDES]
+
+don't write some things structural some things behavioural. write structural stuff and put into behavioural as a module.
+
+verilog 26 built in combinational primitives (and, or, nand, etc)
+
+
+outputs first, inputs after. (his preference)
+case sensitive.
+lines terminate w semicolon;
+
+verilog operators on slides
+
+reduction: does operation to all of the bits in the singular input wire.
+
+verilog dot notation for when one doesn't like the order of ports
+
+Verilog Styles for Synthesis of Digital Systems - look through it at densmore's next office hour
 
