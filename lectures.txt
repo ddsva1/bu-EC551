@@ -276,3 +276,7 @@ verilog dot notation for when one doesn't like the order of ports
 
 Verilog Styles for Synthesis of Digital Systems - look through it at densmore's next office hour
 
+=======================================================================================
+lecture 6 2026-09-22
+(lecture 5 slides) PRESUMABLY
+
