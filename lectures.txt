@@ -280,3 +280,55 @@ Verilog Styles for Synthesis of Digital Systems - look through it at densmore's 
 lecture 6 2026-09-22
 (lecture 5 slides) PRESUMABLY
 
+analog simulation
+ - divide time into slices
+ - update info in whole circuit at each slices
+ - used by SPICE (environment for circuit simulation)
+ - - allows detailed modeling of current n voltage
+ - - computationally intensive very slow.
+ 
+
+bad simulator: looks at every gate and update on input change
+better simulator: update each gate only when an input for the gate changes.
+best simulator: see better simulator, stop when gate output doesnt change
+^^^event driven simulator.
+(like verilog) (event: change in net's value, two components. value, time)
+
+data structure "TIME WHEEL"
+data structure in simulation that determines the order of the events processed
+events placed on time wheel in time order and taken out of the head to process
+stores CHANGES IN VALUES IE EVENTS
+start from the first change available:
+ - tie of times, choose either one
+ - put changed values due to previous change events at END OF WHEEL
+
+X unknown value/ambiguous
+Z high impedance no value
+
+in reality, though:
+no actual 'x'. 'x' is bad.
+see slides lecture 5 to see the x/z gate logic
+
+net family includes wired-and (wand) and wired-or (wor) - maybe unsynthesizable
+also includes supply0 and supply1, to model ground and power connections respectively
+
+testbench! UUT = DUT.
+special verilog module with no ports, timing, events etc
+
+= blocking assignment
+<= nonblocking assignment, looked at equivalently
+
+FOUND GROUP FRANCIS AND. DUMA?? have francis on discord now
+
+https://www.youtube.com/playlist?list=PLkw8tPrWxGDZdCLviboa4n4_xF2qAikhX
+be evil suggest vigenere cipher encoder decoder idk
+
+inertial delay - gates
+ - if fixed by delay, then inertial delay. gate more stable
+transport delay - nets(wires)
+ - if spike in value is shifted, then it's due to the wire. ie transport delay
+
+event descheduling caused by inertial delay.
+
+unit delay (delay all by 1) better than 0 delay.
+depth of circuit affects speed! easier also to see propagation through circuit.
