@@ -278,7 +278,7 @@ Verilog Styles for Synthesis of Digital Systems - look through it at densmore's 
 
 =======================================================================================
 lecture 6 2026-09-22
-(lecture 5 slides) PRESUMABLY
+(lecture 5 slides) 
 
 analog simulation
  - divide time into slices
@@ -332,3 +332,59 @@ event descheduling caused by inertial delay.
 
 unit delay (delay all by 1) better than 0 delay.
 depth of circuit affects speed! easier also to see propagation through circuit.
+
+=======================================================================================
+lecture 7 2026-09-24
+(lecture 6 slides) 
+
+can link fpgas together
+
+benefits of PFGAs:
+implementation of random logic - easier changes at system level to modify one device
+can eliminate need for full custom chips
+
+prototyping: ensemble of gate arrays used to emulate a circuit to be manufactured.
+better/more/faster debugging
+
+configuration: bits that determine logic function+interconnect
+CLB: combinational logic block
+LUT: look up table
+IOB: I/O block, I/O pin + associated logic and electronics
+
+
+LUT BASED: input signals used as pointer to look up table (and output)
+
+look up cascade logic block
+
+CORDIC: coordinate rotation digital computer. non linear arithmetic in digital logic.
+
+for example, calculating e^x:
+if only 16 points between 0 and 6, then can hard-code values.
+
+by assigning values to a wire, synthesis tool can use boolean logic to simplify the LUT entries and make it more area efficient.
+if always small, static, hardcoded values - useful to take this approach. otherwise, use register.
+can also interpolate between fixed points using adders and subtractors
+how to know if good enough? use area and power used as metrics
+
+even/odd bitonic sorters - similar to merge sort.
+sorting N elements, need NlogN cycles.
+
+even-odd sorter - similar to bubble sort.
+sorting N elements, need N cycles.
+
+alternative sorter(bad) count sort implemented in hardware
+
+other sorters:
+sort 1 element every cycle, turning off unused portions of circuit during cycle
+
+
+multiplication in digital logic can only be implemeneted in terms of additions or bit shifts for power-of-2 multiplication.
+booth algorithm for multiplication:
+can break down multiplication into set of partial product computations.
+508 = 512-4
+508 = 0001 1111 1100
+512 = 0010 0000 0000
+004 = 0000 0000 0100
+
+a*b = (a1-a2)*b and both a1 and a2 are powers of 2.
+
