@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sdsva/Documents/GitHub/bu-EC551/lab0/vivado0/vivado0.sim/sim_1/impl/timing/xsim/tutorial_testbench_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tutorial
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sdsva/Documents/GitHub/bu-EC551/lab0/vivado0/vivado0.srcs/sim_1/new/tutorial_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tutorial_testbench

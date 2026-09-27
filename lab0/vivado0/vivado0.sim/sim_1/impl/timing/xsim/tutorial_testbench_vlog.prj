@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tutorial_testbench_time_impl.v" \
+"../../../../../vivado0.srcs/sim_1/new/tutorial_testbench.v" \
+
+# Do not sort compile order
+nosort
