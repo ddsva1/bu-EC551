@@ -390,4 +390,23 @@ a*b = (a1-a2)*b and both a1 and a2 are powers of 2.
 
 =======================================================================================
 lecture 8 2026-09-29
-(lecture 7 slides) 
+(lecture 7 slides)
+
+Topic: FPGAs
+Densmore FPGA, demonstrating connections between inputs, Look up tables, wires.
+
+[IN 0] [IN 1] .... [IN 6]
+WIRE [7:0]. Inputs can connect to any of these wires. Wires can connect to any L1 to L6
+[L1] [L2] ..... [L6]
+WIRE [15:8] L1 to L6 can connect to any of these wires. Wires can connect to any L7 to L12
+[L7] [L8] ......[L12]
+WIRE [23:16] L7 to L12 can connect to any of these wires.
+
+LOGIC CIRCUIT EXAMPLE IN PHOTOS ALONG WITH PHOTO OF FPGA DIAGRAM.
+Assume 1 gate only per LUT. 9 gates, so 9 Look Up tables.
+
+Step 1: Write verilog.
+Step 2: Create netlist
+Step 3: 
+
+Topic: Behavioural Verilog
