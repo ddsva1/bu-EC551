@@ -388,3 +388,6 @@ can break down multiplication into set of partial product computations.
 
 a*b = (a1-a2)*b and both a1 and a2 are powers of 2.
 
+=======================================================================================
+lecture 8 2026-09-29
+(lecture 7 slides) 
