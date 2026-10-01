@@ -410,3 +410,20 @@ Step 2: Create netlist
 Step 3: 
 
 Topic: Behavioural Verilog
+continuous agreeement 
+assign LHS = RHS;
+
+see slides from lecture 7
+
+ALWAYS BLOCK: OUTPUT TO REGS.
+As it isnt regularly changed, only when sensitivity list updated, must keep past answers constant and store answers to registers.
+
+ask q about adding default case even if all states are described, in case of error or X value input?
+
+densmore doesn't like implicit continuous assignment and tbh nor do I
+
+Berkeley something something something
+
+avoid explicit or implicit structural feedback/cycles
+ - double assign statements
+
