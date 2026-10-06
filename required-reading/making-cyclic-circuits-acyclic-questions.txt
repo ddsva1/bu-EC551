@@ -1,0 +1,26 @@
+What defines if a circuit is combinational (for a given input vector)?
+if three-valued simulationof the circuit starting with all internal nodes set to X
+resolves the output of every gate in the circuit to either 0 or 1.
+
+Why is it important that the cyclic circuit input does not oscillate?
+Oscillation requires feedback loops which cause there to be no static combinational result.
+
+What does BDD stand for?
+Binary Decision Diagram.
+
+What creates an acyclic circuit fragment?
+Applying a controlling value to an input and propagate it as far as possible.
+
+How do we choose which acyclic circuit fragments to discard?
+Discard fragments that are 'covered' by other fragments.
+
+What is a 'greedy technique'?
+At each stage, makes local optimal choice.
+
+How does the merging algorithm avoid creating a cycle?
+"The mapping m records the most-recently-used copy of each gate
+g to avoid introducing a cycle. The if test guarantees that every
+input wire to the gate g∗comes from gates earlier in the schedule.
+Thus, the schedule s always implies an acyclic netlist since a gate’s
+inputs always come from gates earlier in the schedule."
+

@@ -1,0 +1,33 @@
+﻿Field,Agilex® 5 FPGA E-Series 008B (B23B),Agilex® 5 FPGA E-Series 013B (B23A)
+Product Basics,,
+Marketing Status,Launched,Launched
+Launch Date,Q3'22,Q3'22
+Process Node,Intel 7,Intel 7
+Product Resources,,
+Logic Elements (LE),85196,138060
+LUTs,28880,46800
+Logic Registers,115520,187200
+Fabric and I/O PLLs,12,12
+Maximum Embedded Memory,5.56 Mb,8.42 Mb
+Maximum High Bandwidth Memory,-,-
+Digital Signal Processing (DSP) / AI Blocks,116,188
+Peak INT 8 (TOPS),3.05,4.93
+Hard Processor System (HPS),"Dual core Arm* Cortex* -A76, Dual core Arm* Cortex* -A55","Dual core Arm* Cortex* -A76, Dual core Arm* Cortex* -A55"
+Hard Crypto Blocks,-,-
+Hard Memory Controllers,Yes,Yes
+External Memory Interfaces (EMIF),"DDR4, LPDDR4, LPDDR5","DDR4, LPDDR4, LPDDR5"
+Maximum Programmable Logic I/O,351,216
+Maximum LVDS Pairs,96,96
+Max NRZ Transceivers,-,4
+Max NRZ Data Rate,-,17.16 Gbps
+Max PAM4 Transceivers,-,-
+Max PAM4 Data Rate,-,-
+Hard IP,PCIe Gen4,PCIe Gen4
+Hyper-Registers,Yes,Yes
+Security Features,-,-
+Special Features,-,-
+Package Option,B23B,B23A
+Fabric Speed Grade,"4,5,6","4,5,6"
+Tile Speed Grade,-,-
+Pin Count,795,839
+Additional Information,Product Resources (https://www.altera.com/products/fpga/agilex/5),Product Resources (https://www.altera.com/products/fpga/agilex/5)

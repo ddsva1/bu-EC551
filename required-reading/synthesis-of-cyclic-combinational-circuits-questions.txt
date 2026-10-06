@@ -1,0 +1,34 @@
+What is an example of timing-dependent behaviour in a circuit?
+R-S latch.
+
+Why is a 7-segment display decoder combinational, despite feedback?
+The feedback is in a topological sense, not an electrical sense.
+
+Why can loops be advantageous?
+With feedback, nodes can benefit from work done elsewhere.
+
+What was Malik's work on?
+He proved that deciding whether acyclic circuit is combinational or not 
+is co-NP-complete, and he formulated an analysis algorithm for this task 
+based on ternary-valued simulation. He also addressed the issue of
+timing analysis and testing for faults.
+*Assuming that one doesn't need to specify which paper the question is for
+
+What is a substitutional set?
+The set resulting from substituting node functions
+
+What's another term for random logic synthesis?
+Multilevel Logic Synthesis
+
+What's a difference between the Break Down and Build Up approach?
+ - Performed inside/outside the space of solutions
+ - Terminates when it hits a combinational solution/non-combinational solution
+ - etc, etc.
+
+Which circuit benchmarking tools were used? How were they affected by latches?
+They weren't, as the combinational portions were extracted from the
+circuits with latches .
+
+What is the current focus of work?
+Optimizing for area.
+
