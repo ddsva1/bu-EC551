@@ -1,0 +1,33 @@
+﻿Field,Agilex® 5 FPGA E-Series 005B (B15A),Agilex® 5 FPGA E-Series 065A (B32A)
+Product Basics,,
+Marketing Status,Launched,Launched
+Launch Date,Q3'22,Q3'22
+Process Node,Intel 7,Intel 7
+Product Resources,,
+Logic Elements (LE),50445,656080
+LUTs,17100,222400
+Logic Registers,68400,889600
+Fabric and I/O PLLs,7,21
+Maximum Embedded Memory,3.06 Mb,38.25 Mb
+Maximum High Bandwidth Memory,-,-
+Digital Signal Processing (DSP) / AI Blocks,65,846
+Peak INT 8 (TOPS),1.7,25.99
+Hard Processor System (HPS),-,"Dual core Arm* Cortex* -A76, Dual core Arm* Cortex* -A55"
+Hard Crypto Blocks,-,-
+Hard Memory Controllers,Yes,Yes
+External Memory Interfaces (EMIF),"DDR4, LPDDR4, LPDDR5","DDR4, DDR5, LPDDR4, LPDDR5"
+Maximum Programmable Logic I/O,152,504
+Maximum LVDS Pairs,36,192
+Max NRZ Transceivers,-,24
+Max NRZ Data Rate,-,28.1 Gbps
+Max PAM4 Transceivers,-,-
+Max PAM4 Data Rate,-,-
+Hard IP,-,PCIe Gen4
+Hyper-Registers,Yes,Yes
+Security Features,-,-
+Special Features,-,-
+Package Option,B15A,B32A
+Fabric Speed Grade,"4,5,6","1,2,3"
+Tile Speed Grade,-,-
+Pin Count,351,1591
+Additional Information,Product Resources (https://www.altera.com/products/fpga/agilex/5),Product Resources (https://www.altera.com/products/fpga/agilex/5)
