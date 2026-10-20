@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sdsva/Documents/GitHub/bu-EC551/hw/hw2/verilogtesting/project_5d/project_5d.srcs/sources_1/new/fiveD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fiveD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sdsva/Documents/GitHub/bu-EC551/hw/hw2/verilogtesting/project_5d/project_5d.srcs/sim_1/new/fived_dut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fived_dut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sdsva/Documents/GitHub/bu-EC551/hw/hw2/verilogtesting/project_5d/project_5d.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

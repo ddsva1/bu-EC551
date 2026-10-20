@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_5d.srcs/sources_1/new/fiveD.v" \
+"../../../../project_5d.srcs/sim_1/new/fived_dut.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

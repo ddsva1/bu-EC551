@@ -1,0 +1,4 @@
+Running: xsim.dir/fived_dut_behav/xsimk.exe -simmode gui -wdb fived_dut_behav.wdb -simrunnum 0 -socket 64261
+Design successfully loaded
+Design Loading Memory Usage: 8744 KB (Peak: 8744 KB)
+Design Loading CPU Usage: 61 ms
