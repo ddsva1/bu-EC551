@@ -1,0 +1,6 @@
+Time resolution is 1 ps
+in=0000 -> out=000
+in=0001 -> out=001
+in=0011 -> out=010
+in=0111 -> out=011
+in=1111 -> out=100
