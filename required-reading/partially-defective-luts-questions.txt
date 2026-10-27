@@ -1,0 +1,23 @@
+Why do we see increasing rates of device failure as circuit feature sizes shrink?
+
+What part of the FPGA chips typically fail most often?
+
+What is the constant multiplexer failure mode, and why does the speed of switching matter?
+
+What are the two multiplexer models? (fully functional and constant multiplexer)
+
+With low Vdd, what could cause inverters to be always-on?
+-For low Vdd and extreme
+variation, it is even possible to have inverters where the “on”
+drive current, Idsat, for the PMOS or NMOS transistor is lower
+than the “off” current of the complementary transistor. In such
+cases, the inverter will never switch.
+
+Why can increasing the Source Voltage Vdd reduce the variation sensitivity?
+
+How effective at managing with defect rates is Perfect+Spare compared to Tolerate+Spare?
+
+What can cause a high threshold voltage variation?
+
+
+Referencing figure 5,

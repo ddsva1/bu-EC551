@@ -1,0 +1,35 @@
+Why has clock frequency scaling stalled in the middle of the last decade?
+
+What current alternate approaches are being used to provide acceleration?
+
+What is an example of a language that a HLS tool starts working from?
+
+What is a benefit of using FPGAs to batch-test implementations?
+
+Where has HLS been useful (ie what applications or fields)
+
+What is an example of a new language created for high level synthesis?
+
+What does DWARV stand for? DELFT WORKBENCH AUTOMATED RECONFIGURABLE VHDL
+
+What is a guarded atomic action?
+
+Why is a communicating sequential process-style extension?
+-consists of processes that have to be
+independently synchronized and streams for interprocess com-
+munication, the application domain is limited primarily to
+image processing and streaming applications
+
+What is Napa-C's intended use-case?
+
+What is a false path, in operation chaining?
+
+Why is bitwidth optimization typically only done per-algorithm?
+-usually needing specific info abt algorithm and the input data sensitivity
+
+What are two ways multipliers can be implemented?
+dedicated DSP blocks or implemented with
+look-up-tables (LUTs)
+
+
+
