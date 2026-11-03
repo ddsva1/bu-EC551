@@ -427,3 +427,26 @@ Berkeley something something something
 avoid explicit or implicit structural feedback/cycles
  - double assign statements
 
+=======================================================================================
+lecture ? 2026-11-03
+(lecture 12 slides) Retiming (out of order)
+
+optimising sequential circuits - retiming gate level netlist
+combinational circuit between two registers triggered by clock:
+try to move registers, to reduce clock time! 
+
+problem: can't just optimise boolean logic - very localised, short sighted, myopic.
+relations across register boundaries are ignored.
+
+retiming: move registers around such that clock cycle decreases and or number of registers decreases (ie number of clock cycles needed decreases)
+requires input/output behaviour to be observed.
+
+peripheral retiming: combine retiming with combinational optimizing techniques.
+moving latches temporarily, etc
+
+see circuit representation slides
+
+W for weight - take the values on the paths/edges between nodes.
+Maximum D for delay WITH a path equalling W- maximum path delay between points - take values in the nodes.
+
+for homework use ease - bellman ford algorithm
