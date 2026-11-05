@@ -473,6 +473,9 @@ Tmin>=Tmin+Tskew
 
 Minimum time also known as contamination delay
 
+remember time borrowing slides
+
+
 
 
 
