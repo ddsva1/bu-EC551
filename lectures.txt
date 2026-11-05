@@ -467,4 +467,13 @@ Can change circuit architecture to obtain smaller Tcycle
 
 topological delay of 5 means critical path passes through 5 gates
 
+Remember set-up time, skew, flipflop delay, hold time:
+Tmax+Tsetup+Tclock_to_q<=Tallowed
+Tmin>=Tmin+Tskew
+
+Minimum time also known as contamination delay
+
+
+
+
 
