@@ -450,3 +450,21 @@ W for weight - take the values on the paths/edges between nodes.
 Maximum D for delay WITH a path equalling W- maximum path delay between points - take values in the nodes.
 
 for homework use ease - bellman ford algorithm
+
+move delay from input to output: negative retiming vector.
+move delay from output to input: positive retiming vector.
+
+for formulae: data goes from u to v. formulae involving r(u) and r(v)
+
+=======================================================================================
+lecture ? 2026-11-05
+(lecture 11 slides) Timing analysis and correction (out of order)
+
+CL combinational logic (block), T time
+signal must arrive before latching edge, order important
+Tcycle > Tprop_delay_through_CL + Toverhead
+Can change circuit architecture to obtain smaller Tcycle
+
+topological delay of 5 means critical path passes through 5 gates
+
+
