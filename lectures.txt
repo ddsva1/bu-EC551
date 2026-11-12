@@ -476,7 +476,109 @@ Minimum time also known as contamination delay
 remember time borrowing slides
 
 
+=======================================================================================
+lecture ? 2026-11-12
+
+going over canonical forms
+same truth table
+SOP of minterms in the onset
+POS of maxterms in the offset
+
+Binary Decision Diagrams BDDs - have to be ordered and reduced
+ROBDD.
+
+BDD: 
+AB+A~C+~A~B
+1. pick a variable (node) to start with.
+A can be 0 or 1
+B can be 0 or 1 for each value of ?A
+C can be 0 or 1 for each value of ?A?B
+Outputs linked to each branched ?A?B?C
+
+if Ordered BDD: variable ordering is pre-decided.
+Path positions (0,1 or 1,0) is pre-decided.
+
+if Reduced BDD:
+cofactors:
+A=1, FA = B+~C
+A=0, F~A = ~B.
+FAB = 1
+FA~B = ~C
+etc etc etc
+
+pick variable to start (A)
+
+add F(A) to the tree values, so that not all values have to be expanded within tree
+continue with F~A, F AB, F~A, F........ etc
+
+more interesting puzzle will be put ONLINE
+
+kerneling and co kernels.
+aim: even if small AND portions in SOP, fan-in for the OR is huge.
+aim: turn two level logic into multi level logic to decompose enormous expressions.
+second benefit: exposing useful intermediate nodes
+
+Decomposition
+F-ABC+ABD+~A~C~D+~B~C~D
+F=XY+~X~Y
+X= AB
+Y=C+D
+
+Extraction (when multiple circuits)
+F=(A+B)CD+E
+G=(A+B)~E
+H=CDE
+F=XY+E
+G=X~E
+H=YE
+
+where X=A+B, Y=CD
 
 
 
 
+F=ABC+ABDE
+cube = collection of literals.
+dividing F by cube A:
+F/A = BC+BDE, no remainder
+F/AB = C+DE, no remainder
+
+
+F=ABD+AB~EF+ACD+CE_AC~EF+DE
+G=BF+BDE+CF+~AF
+
+
+primary divisor:
+F/A = Primary divisor of BD+B~EF+CD+C~EF. remainder of CE+DE.
+
+is primary divisor cube free?
+yes: if dividing primary divisor by any divisor, there will be a remainder. it will be cube free. KERNEL.
+no: there exists another divisor that will leave no remainder, and so it will contain another cube.
+
+F/B: AD+A~EF. remainder of ACD+CE+ACEF+DE.
+not cube free; contains A, which is a divisor of F/B.
+
+F/C: AD+E+A~EF. remainder of ABD+AB~E+DE.
+F/C is a kernel.
+
+concept 1: primary divisor
+concept 2: PD*Q+R=F
+concept 3: cube free
+concept 4: kernels - cube free primary divisor
+concept 5: co-kernel (what you divide it by, to get that kernel. if PD = F/A, A is co-kernel)
+concept 6: level 0 kernel (F/AD = B+C with remainder. yes a kernel, nowhere to go next. lets you know when to stop)
+
+FCo kernel: a c d e ab ac ad a~e 1[kernel = F]
+FKernel: (answers written on board but my hands not doing great)
+GCo Kernel|b f 1[kernel = G]
+GKernel (answers written on board but my hands not doing great)
+
+finding non-trivial intersection between F kernels and G kernels:
+F kernel b+c, G kernel b+c+~a. common non trivial intersection of B+C.
+
+Read paper: non trivial intersection, rectangle coverage.
+
+rewrite f, g:
+find intersections between same-expression kernels also(?)
+for cubes in intersection, which co-kernels are associated with literals in the non trivial intersections? (see prev line)
+F=(B+C)(AD+A~EF)+CE+DE
